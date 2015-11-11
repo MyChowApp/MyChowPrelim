@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		086A72541BECB16E00D1F8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A72531BECB16E00D1F8FC /* AppDelegate.swift */; };
+		086A72561BECB16E00D1F8FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A72551BECB16E00D1F8FC /* MainViewController.swift */; };
+		086A72591BECB16E00D1F8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086A72571BECB16E00D1F8FC /* Main.storyboard */; };
+		086A725B1BECB16E00D1F8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086A725A1BECB16E00D1F8FC /* Assets.xcassets */; };
+		086A725E1BECB16E00D1F8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086A725C1BECB16E00D1F8FC /* LaunchScreen.storyboard */; };
+		086A72691BECB16F00D1F8FC /* MyChowPrelimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A72681BECB16F00D1F8FC /* MyChowPrelimTests.swift */; };
+		086A72741BECB16F00D1F8FC /* MyChowPrelimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A72731BECB16F00D1F8FC /* MyChowPrelimUITests.swift */; };
+		086A72821BECB34300D1F8FC /* EatInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A72811BECB34300D1F8FC /* EatInController.swift */; };
+		086A72841BECB35000D1F8FC /* EatOutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A72831BECB35000D1F8FC /* EatOutController.swift */; };
+		086A72861BECB36100D1F8FC /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A72851BECB36100D1F8FC /* ProfileController.swift */; };
+		086A72881BECB36F00D1F8FC /* PeriodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A72871BECB36F00D1F8FC /* PeriodController.swift */; };
+		08D0572B1BEF67450062EFDA /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D0572A1BEF67450062EFDA /* InitialViewController.swift */; };
+		08D0572D1BEFD6C20062EFDA /* WizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D0572C1BEFD6C10062EFDA /* WizViewController.swift */; };
+		08D0572F1BF01BAE0062EFDA /* ProfSetUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D0572E1BF01BAE0062EFDA /* ProfSetUpController.swift */; };
+		08D057311BF0233C0062EFDA /* SetUpFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D057301BF0233C0062EFDA /* SetUpFilterController.swift */; };
+		08D057331BF028110062EFDA /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D057321BF028110062EFDA /* MessageController.swift */; };
+		08D0573D1BF072D10062EFDA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D0573C1BF072D10062EFDA /* CheckBox.swift */; };
+		08D0573F1BF080130062EFDA /* FinishMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D0573E1BF080130062EFDA /* FinishMessageController.swift */; };
+		08FB53D41BF275D700A71EE9 /* MyChowPrelim.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08FB53D21BF275D700A71EE9 /* MyChowPrelim.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		086A72651BECB16F00D1F8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 086A72481BECB16E00D1F8FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 086A724F1BECB16E00D1F8FC;
+			remoteInfo = MyChowPrelim;
+		};
+		086A72701BECB16F00D1F8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 086A72481BECB16E00D1F8FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 086A724F1BECB16E00D1F8FC;
+			remoteInfo = MyChowPrelim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		086A72501BECB16E00D1F8FC /* MyChowPrelim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChowPrelim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		086A72531BECB16E00D1F8FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		086A72551BECB16E00D1F8FC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		086A72581BECB16E00D1F8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		086A725A1BECB16E00D1F8FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		086A725D1BECB16E00D1F8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		086A725F1BECB16E00D1F8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		086A72641BECB16F00D1F8FC /* MyChowPrelimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyChowPrelimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		086A72681BECB16F00D1F8FC /* MyChowPrelimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChowPrelimTests.swift; sourceTree = "<group>"; };
+		086A726A1BECB16F00D1F8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		086A726F1BECB16F00D1F8FC /* MyChowPrelimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyChowPrelimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		086A72731BECB16F00D1F8FC /* MyChowPrelimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChowPrelimUITests.swift; sourceTree = "<group>"; };
+		086A72751BECB16F00D1F8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		086A72811BECB34300D1F8FC /* EatInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatInController.swift; sourceTree = "<group>"; };
+		086A72831BECB35000D1F8FC /* EatOutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatOutController.swift; sourceTree = "<group>"; };
+		086A72851BECB36100D1F8FC /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		086A72871BECB36F00D1F8FC /* PeriodController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodController.swift; sourceTree = "<group>"; };
+		08D0572A1BEF67450062EFDA /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		08D0572C1BEFD6C10062EFDA /* WizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizViewController.swift; sourceTree = "<group>"; };
+		08D0572E1BF01BAE0062EFDA /* ProfSetUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfSetUpController.swift; sourceTree = "<group>"; };
+		08D057301BF0233C0062EFDA /* SetUpFilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpFilterController.swift; sourceTree = "<group>"; };
+		08D057321BF028110062EFDA /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		08D0573C1BF072D10062EFDA /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		08D0573E1BF080130062EFDA /* FinishMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishMessageController.swift; sourceTree = "<group>"; };
+		08FB53D31BF275D700A71EE9 /* MyChowPrelim.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyChowPrelim.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		086A724D1BECB16E00D1F8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086A72611BECB16F00D1F8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086A726C1BECB16F00D1F8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		086A72471BECB16E00D1F8FC = {
+			isa = PBXGroup;
+			children = (
+				086A72521BECB16E00D1F8FC /* MyChowPrelim */,
+				086A72671BECB16F00D1F8FC /* MyChowPrelimTests */,
+				086A72721BECB16F00D1F8FC /* MyChowPrelimUITests */,
+				086A72511BECB16E00D1F8FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		086A72511BECB16E00D1F8FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				086A72501BECB16E00D1F8FC /* MyChowPrelim.app */,
+				086A72641BECB16F00D1F8FC /* MyChowPrelimTests.xctest */,
+				086A726F1BECB16F00D1F8FC /* MyChowPrelimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		086A72521BECB16E00D1F8FC /* MyChowPrelim */ = {
+			isa = PBXGroup;
+			children = (
+				086A72531BECB16E00D1F8FC /* AppDelegate.swift */,
+				086A72811BECB34300D1F8FC /* EatInController.swift */,
+				08D0573C1BF072D10062EFDA /* CheckBox.swift */,
+				086A72871BECB36F00D1F8FC /* PeriodController.swift */,
+				08D0572E1BF01BAE0062EFDA /* ProfSetUpController.swift */,
+				08FB53D21BF275D700A71EE9 /* MyChowPrelim.xcdatamodeld */,
+				08D0572A1BEF67450062EFDA /* InitialViewController.swift */,
+				08D0572C1BEFD6C10062EFDA /* WizViewController.swift */,
+				086A72551BECB16E00D1F8FC /* MainViewController.swift */,
+				08D057321BF028110062EFDA /* MessageController.swift */,
+				08D0573E1BF080130062EFDA /* FinishMessageController.swift */,
+				08D057301BF0233C0062EFDA /* SetUpFilterController.swift */,
+				086A72851BECB36100D1F8FC /* ProfileController.swift */,
+				086A72831BECB35000D1F8FC /* EatOutController.swift */,
+				086A72571BECB16E00D1F8FC /* Main.storyboard */,
+				086A725A1BECB16E00D1F8FC /* Assets.xcassets */,
+				086A725C1BECB16E00D1F8FC /* LaunchScreen.storyboard */,
+				086A725F1BECB16E00D1F8FC /* Info.plist */,
+			);
+			path = MyChowPrelim;
+			sourceTree = "<group>";
+		};
+		086A72671BECB16F00D1F8FC /* MyChowPrelimTests */ = {
+			isa = PBXGroup;
+			children = (
+				086A72681BECB16F00D1F8FC /* MyChowPrelimTests.swift */,
+				086A726A1BECB16F00D1F8FC /* Info.plist */,
+			);
+			path = MyChowPrelimTests;
+			sourceTree = "<group>";
+		};
+		086A72721BECB16F00D1F8FC /* MyChowPrelimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				086A72731BECB16F00D1F8FC /* MyChowPrelimUITests.swift */,
+				086A72751BECB16F00D1F8FC /* Info.plist */,
+			);
+			path = MyChowPrelimUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		086A724F1BECB16E00D1F8FC /* MyChowPrelim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086A72781BECB16F00D1F8FC /* Build configuration list for PBXNativeTarget "MyChowPrelim" */;
+			buildPhases = (
+				086A724C1BECB16E00D1F8FC /* Sources */,
+				086A724D1BECB16E00D1F8FC /* Frameworks */,
+				086A724E1BECB16E00D1F8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyChowPrelim;
+			productName = MyChowPrelim;
+			productReference = 086A72501BECB16E00D1F8FC /* MyChowPrelim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		086A72631BECB16F00D1F8FC /* MyChowPrelimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086A727B1BECB16F00D1F8FC /* Build configuration list for PBXNativeTarget "MyChowPrelimTests" */;
+			buildPhases = (
+				086A72601BECB16F00D1F8FC /* Sources */,
+				086A72611BECB16F00D1F8FC /* Frameworks */,
+				086A72621BECB16F00D1F8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				086A72661BECB16F00D1F8FC /* PBXTargetDependency */,
+			);
+			name = MyChowPrelimTests;
+			productName = MyChowPrelimTests;
+			productReference = 086A72641BECB16F00D1F8FC /* MyChowPrelimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		086A726E1BECB16F00D1F8FC /* MyChowPrelimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086A727E1BECB16F00D1F8FC /* Build configuration list for PBXNativeTarget "MyChowPrelimUITests" */;
+			buildPhases = (
+				086A726B1BECB16F00D1F8FC /* Sources */,
+				086A726C1BECB16F00D1F8FC /* Frameworks */,
+				086A726D1BECB16F00D1F8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				086A72711BECB16F00D1F8FC /* PBXTargetDependency */,
+			);
+			name = MyChowPrelimUITests;
+			productName = MyChowPrelimUITests;
+			productReference = 086A726F1BECB16F00D1F8FC /* MyChowPrelimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		086A72481BECB16E00D1F8FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Thanapon Sathirathiwat";
+				TargetAttributes = {
+					086A724F1BECB16E00D1F8FC = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					086A72631BECB16F00D1F8FC = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 086A724F1BECB16E00D1F8FC;
+					};
+					086A726E1BECB16F00D1F8FC = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 086A724F1BECB16E00D1F8FC;
+					};
+				};
+			};
+			buildConfigurationList = 086A724B1BECB16E00D1F8FC /* Build configuration list for PBXProject "MyChowPrelim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 086A72471BECB16E00D1F8FC;
+			productRefGroup = 086A72511BECB16E00D1F8FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				086A724F1BECB16E00D1F8FC /* MyChowPrelim */,
+				086A72631BECB16F00D1F8FC /* MyChowPrelimTests */,
+				086A726E1BECB16F00D1F8FC /* MyChowPrelimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		086A724E1BECB16E00D1F8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086A725E1BECB16E00D1F8FC /* LaunchScreen.storyboard in Resources */,
+				086A725B1BECB16E00D1F8FC /* Assets.xcassets in Resources */,
+				086A72591BECB16E00D1F8FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086A72621BECB16F00D1F8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086A726D1BECB16F00D1F8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		086A724C1BECB16E00D1F8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D057331BF028110062EFDA /* MessageController.swift in Sources */,
+				086A72881BECB36F00D1F8FC /* PeriodController.swift in Sources */,
+				08D0572B1BEF67450062EFDA /* InitialViewController.swift in Sources */,
+				086A72861BECB36100D1F8FC /* ProfileController.swift in Sources */,
+				08D057311BF0233C0062EFDA /* SetUpFilterController.swift in Sources */,
+				08D0573F1BF080130062EFDA /* FinishMessageController.swift in Sources */,
+				08D0572D1BEFD6C20062EFDA /* WizViewController.swift in Sources */,
+				08D0572F1BF01BAE0062EFDA /* ProfSetUpController.swift in Sources */,
+				086A72561BECB16E00D1F8FC /* MainViewController.swift in Sources */,
+				08D0573D1BF072D10062EFDA /* CheckBox.swift in Sources */,
+				086A72541BECB16E00D1F8FC /* AppDelegate.swift in Sources */,
+				086A72821BECB34300D1F8FC /* EatInController.swift in Sources */,
+				086A72841BECB35000D1F8FC /* EatOutController.swift in Sources */,
+				08FB53D41BF275D700A71EE9 /* MyChowPrelim.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086A72601BECB16F00D1F8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086A72691BECB16F00D1F8FC /* MyChowPrelimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086A726B1BECB16F00D1F8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086A72741BECB16F00D1F8FC /* MyChowPrelimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		086A72661BECB16F00D1F8FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 086A724F1BECB16E00D1F8FC /* MyChowPrelim */;
+			targetProxy = 086A72651BECB16F00D1F8FC /* PBXContainerItemProxy */;
+		};
+		086A72711BECB16F00D1F8FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 086A724F1BECB16E00D1F8FC /* MyChowPrelim */;
+			targetProxy = 086A72701BECB16F00D1F8FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		086A72571BECB16E00D1F8FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086A72581BECB16E00D1F8FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		086A725C1BECB16E00D1F8FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086A725D1BECB16E00D1F8FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		086A72761BECB16F00D1F8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		086A72771BECB16F00D1F8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		086A72791BECB16F00D1F8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyChowPrelim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsath.MyChowPrelim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		086A727A1BECB16F00D1F8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyChowPrelim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsath.MyChowPrelim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		086A727C1BECB16F00D1F8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyChowPrelimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsath.MyChowPrelimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyChowPrelim.app/MyChowPrelim";
+			};
+			name = Debug;
+		};
+		086A727D1BECB16F00D1F8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyChowPrelimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsath.MyChowPrelimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyChowPrelim.app/MyChowPrelim";
+			};
+			name = Release;
+		};
+		086A727F1BECB16F00D1F8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyChowPrelimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsath.MyChowPrelimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyChowPrelim;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		086A72801BECB16F00D1F8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyChowPrelimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsath.MyChowPrelimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyChowPrelim;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		086A724B1BECB16E00D1F8FC /* Build configuration list for PBXProject "MyChowPrelim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086A72761BECB16F00D1F8FC /* Debug */,
+				086A72771BECB16F00D1F8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		086A72781BECB16F00D1F8FC /* Build configuration list for PBXNativeTarget "MyChowPrelim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086A72791BECB16F00D1F8FC /* Debug */,
+				086A727A1BECB16F00D1F8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		086A727B1BECB16F00D1F8FC /* Build configuration list for PBXNativeTarget "MyChowPrelimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086A727C1BECB16F00D1F8FC /* Debug */,
+				086A727D1BECB16F00D1F8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		086A727E1BECB16F00D1F8FC /* Build configuration list for PBXNativeTarget "MyChowPrelimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086A727F1BECB16F00D1F8FC /* Debug */,
+				086A72801BECB16F00D1F8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08FB53D21BF275D700A71EE9 /* MyChowPrelim.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08FB53D31BF275D700A71EE9 /* MyChowPrelim.xcdatamodel */,
+			);
+			currentVersion = 08FB53D31BF275D700A71EE9 /* MyChowPrelim.xcdatamodel */;
+			path = MyChowPrelim.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 086A72481BECB16E00D1F8FC /* Project object */;
+}
