@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="Filter" syncable="YES">
+        <attribute name="fish" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="glutenfree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nongmo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shrimp" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="birthDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="Filter" positionX="-36" positionY="36" width="128" height="105"/>
+    </elements>
+</model>
