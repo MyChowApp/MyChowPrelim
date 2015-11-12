@@ -28,7 +28,7 @@ class InitialViewController: UIViewController {
         // case haveLaunched == true
         if haveLaunched  {
             print("Not first launch.", terminator: "")
-        self.performSegueWithIdentifier("masterTabView", sender: self)
+        self.performSegueWithIdentifier("mainView", sender: self)
         }
         // case haveLaunched == false
         else {

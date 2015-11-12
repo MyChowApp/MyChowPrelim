@@ -14,12 +14,20 @@ class ProfileController: UIViewController {
     @IBOutlet var emailLabel: UILabel!
     @IBOutlet var bDayLabel: UILabel!
     @IBOutlet var allergiesLabel: UILabel!
+    @IBOutlet var hashMenuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // loading user's profile entity from core data
         loadUserProfile()
         loadUserFilter()
+        
+        //this button invokes side menu bar
+        hashMenuButton.target = self.revealViewController()
+        hashMenuButton.action = Selector("revealToggle:")
+        
+        //Detect hand gesture for side bar menu
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
 
     }
 

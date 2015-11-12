@@ -10,10 +10,17 @@ import UIKit
 
 class PeriodController: UIViewController {
 
+    @IBOutlet var hashMenuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //this button invokes side menu bar
+        hashMenuButton.target = self.revealViewController()
+        hashMenuButton.action = Selector("revealToggle:")
+        
+        //Detect hand gesture for side bar menu
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 
     override func didReceiveMemoryWarning() {

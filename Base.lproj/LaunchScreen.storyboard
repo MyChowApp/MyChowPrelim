@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,56 +14,22 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1L-kb-ss5">
-                                <rect key="frame" x="20" y="34" width="560" height="165"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-iJ-9bF">
+                                <rect key="frame" x="129" y="276" width="116" height="115"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="165" id="Xvf-uW-0xM"/>
-                                </constraints>
+                                <state key="normal" image="MyChowAppBowlOnly"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24V-nq-gZm">
+                                <rect key="frame" x="80" y="189" width="215" height="135"/>
+                                <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="MyChow">
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="63" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxj-ZI-gLC">
-                                <rect key="frame" x="207" y="323" width="187" height="78"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="78" id="BfU-8W-mNt"/>
-                                    <constraint firstAttribute="width" constant="187" id="byX-9a-7mJ"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Eat Well.">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="31" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV4-BT-S8R">
-                                <rect key="frame" x="196" y="404" width="209" height="91"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="209" id="95k-5q-X1N"/>
-                                    <constraint firstAttribute="height" constant="91" id="MeW-Vn-kru"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Live Well.">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="31" name="HelveticaNeue"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="72" name="SavoyeLetPlain"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -73,21 +38,18 @@
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="v1L-kb-ss5" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="14" id="0j4-0r-UWS"/>
-                            <constraint firstItem="v1L-kb-ss5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="1RG-n3-am9"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="iV4-BT-S8R" secondAttribute="bottom" constant="105" id="WE8-gE-glC"/>
-                            <constraint firstItem="iV4-BT-S8R" firstAttribute="top" secondItem="Rxj-ZI-gLC" secondAttribute="bottom" constant="3" id="gTk-4s-lcc"/>
-                            <constraint firstItem="iV4-BT-S8R" firstAttribute="centerX" secondItem="Rxj-ZI-gLC" secondAttribute="centerX" id="jUT-6J-4rS"/>
-                            <constraint firstItem="Rxj-ZI-gLC" firstAttribute="centerX" secondItem="v1L-kb-ss5" secondAttribute="centerX" id="kiI-dI-cCU"/>
-                            <constraint firstItem="v1L-kb-ss5" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="wjw-ZM-5o3"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.67843137254901964" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.29588352979999999" green="0.6206028308" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MyChowAppBowlOnly" width="114" height="114"/>
+    </resources>
 </document>
