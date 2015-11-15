@@ -8,8 +8,10 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 class ProfileController: UIViewController {
+    @IBOutlet var goalsLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     @IBOutlet var bDayLabel: UILabel!
@@ -18,9 +20,8 @@ class ProfileController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // loading user's profile entity from core data
+        // loading user's profile entity from Realm Database
         loadUserProfile()
-        loadUserFilter()
         
         //this button invokes side menu bar
         hashMenuButton.target = self.revealViewController()
@@ -38,45 +39,18 @@ class ProfileController: UIViewController {
     
 
     func loadUserProfile(){
-        let appDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
-        let context:NSManagedObjectContext = appDel.managedObjectContext
-        
-        let request = NSFetchRequest(entityName: "User")
-        request.returnsObjectsAsFaults = false
-        
-        let results:NSArray = try! context.executeFetchRequest(request)
-        
-        if(results.count > 0){
-            for item in results as! [NSManagedObject]{
-                nameLabel.text = "Full Name: \(item.valueForKey("firstName")!) \(item.valueForKey("lastName")!)"
-                emailLabel.text = "E-Mail: \(item.valueForKey("email")!)"
-                bDayLabel.text = "Date of Birth: \(item.valueForKey("birthDay")!)"
+        let userProf = try! Realm().objects(UserProfile)
+        if userProf.count > 0{
+            for user in userProf{
+                nameLabel.text = "Full Name:    \(user.fullName!)"
+                emailLabel.text = "Email Address:   \(user.email!)"
+                bDayLabel.text = "Date of Birth:    \(user.dob!)"
+                allergiesLabel.text = "Known Allergies, Intolerances, Prohibited Food:  \(user.foodFilter!)"
+                goalsLabel.text = "Personal Goals:  \(user.goals!)"
             }
-        }else{
-            print("0 Results Returned...  Potential Error.")
         }
-
     }
-    
-    func loadUserFilter(){
-        let appDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
-        let context:NSManagedObjectContext = appDel.managedObjectContext
-        
-        let request = NSFetchRequest(entityName: "Filter")
-        request.returnsObjectsAsFaults = false
-        
-        let results:NSArray = try! context.executeFetchRequest(request)
-        
-        if(results.count > 0){
-            for item in results as! [NSManagedObject]{
-                allergiesLabel.text = "\(item.valueForKey("fish")!), \(item.valueForKey("shrimp")!), \(item.valueForKey("glutenfree")!), \(item.valueForKey("nongmo")!)"
-                print(item)
-            }
-        }else{
-            print("0 Results Returned...  Potential Error.")
-        }
 
-    }
     /*
     // MARK: - Navigation
 
