@@ -180,4 +180,60 @@ class MealData
     }
 }
 
+class MyMeal: Object{
+    
+    dynamic var Name: String = ""
+    dynamic var ID: Int = 0
+    dynamic var Ingredients: String = ""
+    dynamic var img: String = ""
+    dynamic var Date: String = ""
+    
+    override static func primaryKey() -> String?
+    {
+        return "ID"
+    }
+    
+    override var hashValue: Int {
+        return self.ID
+    }
+    
+}
+
+class MyMealData{
+    
+    static func fetchMealbyName(name: String) -> [MyMeal]
+    {
+        return realm.objects(MyMeal).filter("Name CONTAINS[c] '"+name.lowercaseString+"'").map { $0 }
+    }
+    
+    static func fetchMealbyDate(date:String) -> [MyMeal]{
+        return realm.objects(MyMeal).filter("Date CONTAINS[c] '"+date+"'").map { $0 }
+    }
+    
+    static func returnIngredients(myMeal: MyMeal) -> String{
+        return myMeal.Ingredients
+    }
+    
+    static func addMeal(m: MyMeal)
+    {
+        try! realm.write {
+            realm.add(m, update: true)
+        }
+    }
+    
+    static func removeMealbyName(name: String) -> [MyMeal]
+    {
+        let myMeals = fetchMealbyName(name)
+        try! realm.write {
+            for m in myMeals
+            {
+                realm.delete(m)
+            }
+        }
+        return myMeals
+    }
+    
+    
+}
+
 
