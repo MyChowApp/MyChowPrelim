@@ -23,11 +23,6 @@ class ProfSetUpController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//
-//        self.firstNField.delegate = self
-//        self.lastNField.delegate = self
-//        self.eAddressField.delegate = self
-        
         // Do any additional setup after loading the view.
     }
 
@@ -63,30 +58,10 @@ class ProfSetUpController: UIViewController, UITextFieldDelegate {
                 print("Write to Realm successfully!")
                 try! print(Realm().path)
             }
-            
-            //load entity from coredata
-//            let appDelegate =
-//            UIApplication.sharedApplication().delegate as! AppDelegate
-//            let managedContext = appDelegate.managedObjectContext
-//            let entity =  NSEntityDescription.entityForName("User",
-//                inManagedObjectContext:managedContext)
-//            let info = NSManagedObject(entity: entity!,
-//                insertIntoManagedObjectContext: managedContext)
-//            
-//            //set values to entity
-//            info.setValue(firstNField.text!, forKey: "firstName")
-//            info.setValue(lastNField.text!, forKey: "lastName")
-//            info.setValue(eAddressField.text!, forKey: "email")
-//            info.setValue(bDayStr, forKey: "birthDay")
-//            
-//            // try catch an exception
-//            do {
-//                try managedContext.save()
-//            } catch let error as NSError  {
-//                print("Could not save \(error), \(error.userInfo)")
-//            }
-//            
-//            //proceed to the next screen
+            // initialize food database
+            MealData.initialize()
+     
+            //proceed to the next screen
             let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
             let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MessageController") as UIViewController
             self.presentViewController(vc, animated: true, completion: nil)

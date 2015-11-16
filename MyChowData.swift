@@ -5,12 +5,9 @@
 //  Copyright © 2015 Xingwei Liu. All rights reserved.
 //
 
-
-//Data obtain from parsing
-//MealData.addMeal(Meal(value:["Name":"Tostadas", "ID":1, "Ingredient":foods, "Rate":4, "img":"http://d1wcgy4dy6voh7.cloudfront.net/wp-content/uploads/2015/06/IMG_2015_06_26_05310.jpg"]))
-
 import Foundation
 import RealmSwift
+import Realm
 
 let realm = try! Realm()
 
@@ -62,32 +59,34 @@ class PersonalProfile: Object
     var Height: Double?
 }
 
-class Meal: Object
+
+class Meal: Object, Hashable
 {
     dynamic var Name: String = ""
     dynamic var ID: Int = 0
-    var Ingredients = List<Food>()
-    dynamic var Rate: Int = 5
+    dynamic var Ingredients: String = ""
+    dynamic var Rate: Int = 0
+    dynamic var EatOut: Bool = false
+    dynamic var Catagory: String = ""
+    dynamic var CookTime: String = ""
+    dynamic var PrepTime: String = ""
+    dynamic var TotalTime: String = ""
+    dynamic var Notes: String = ""
+    dynamic var Others: String = ""
+    dynamic var OthersName: String = ""
     dynamic var img: String = ""
-    
     override static func primaryKey() -> String?
     {
         return "ID"
     }
     
-    override func isEqual(object: AnyObject?) -> Bool {
-        if let object = object as? Meal
-        {
-            return object.ID == ID
-        }
-        else
-        {
-            return false
-        }
+    override var hashValue: Int {
+        return self.ID
     }
-    override var hash: Int {
-        return ID.hashValue
-    }
+}
+
+func ==(lhs:Meal, rhs:Meal) -> Bool {
+    return lhs.ID == rhs.ID
 }
 
 class FoodData
@@ -167,24 +166,17 @@ class MealData
         var meals = realm.objects(Meal)
         meals = meals.filter("Rate >= "+String(mf.MinimalRating))
         meals = meals.filter("Rate <= "+String(mf.MaximumRating))
-        var result = meals.map { $0 }
-        var tmp: Array<Meal> = []
-        for i in result
+        for i in mf.NotEatingFoods
         {
-            if(Set<Food>(i.Ingredients).intersect(Set<Food>(mf.NotEatingFoods)).isEmpty)
-            {
-                tmp.append(i)
-            }
+            meals = meals.filter("NOT Others CONTAINS[c] "+i.Name)
         }
-        result = []
-        for i in tmp
+        for i in mf.MustEatingFoods
         {
-            if(!Set<Food>(i.Ingredients).intersect(Set<Food>(mf.MustEatingFoods)).isEmpty)
-            {
-                result.append(i)
-            }
+            meals = meals.filter("Others CONTAINS[c] "+i.Name)
         }
 
-        return result
+        return meals.map { $0 }
     }
 }
+
+

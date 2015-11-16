@@ -1,15 +1,15 @@
 //
-//  FilterBackTableViewController.swift
+//  FilterTableViewControler2.swift
 //  MyChowPrelim
 //
 //  Created by Thanapon Sathirathiwat on 11/15/15.
 //  Copyright © 2015 Thanapon Sathirathiwat. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class FilterBackTableViewController: UITableViewController, CheckboxDelegate {
-    
+class FilterTableViewController2: UITableViewController, CheckboxDelegate {
+
     @IBOutlet var tableViewControl: UITableView!
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mCheckboxTitles.count
@@ -18,7 +18,7 @@ class FilterBackTableViewController: UITableViewController, CheckboxDelegate {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(mCheckboxTitles[indexPath.row] as! String, forIndexPath: indexPath) as UITableViewCell
         
-//        cell.textLabel?.text = mCheckboxTitles[indexPath.row] as? String
+        //        cell.textLabel?.text = mCheckboxTitles[indexPath.row] as? String
         
         return cell
     }
@@ -27,10 +27,10 @@ class FilterBackTableViewController: UITableViewController, CheckboxDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         mCheckboxTitles = ["Gluten-Free", "Vegan", "Chicken", "Shrimp", "Asparagus"];
-
+        
         for i in mCheckboxTitles{
             tableViewControl.registerClass(UITableViewCell.self, forCellReuseIdentifier: i as! String)
-
+            
         }
         self.createCheckboxes(5);
     }
@@ -48,8 +48,8 @@ class FilterBackTableViewController: UITableViewController, CheckboxDelegate {
         for (var counter = 0; counter < lNumberOfCheckboxes; counter++) {
             // #3
             let lCheckbox = Checkbox(frame: lFrame, title: self.mCheckboxTitles[counter] as! String, selected: false);
-                lCheckbox.mDelegate = self;
-                lCheckbox.tag = counter;
+            lCheckbox.mDelegate = self;
+            lCheckbox.tag = counter;
             
             self.view.addSubview(lCheckbox);
             // #4
