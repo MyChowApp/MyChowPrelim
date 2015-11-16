@@ -74,6 +74,7 @@ class Meal: Object, Hashable
     dynamic var Notes: String = ""
     dynamic var Others: String = ""
     dynamic var OthersName: String = ""
+    dynamic var Instructions: String = ""
     dynamic var img: String = ""
     override static func primaryKey() -> String?
     {
